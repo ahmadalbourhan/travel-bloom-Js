@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/36ee474f2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/travel-icon-213.png" type="image/x-icon" />
+  </head>
+  <style>
+    /* Container for the search bar and results */
+    .search-container {
+      display: flex;
+      justify-content: start;
+      position: relative;
+      width: 90%;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    /* Style the results container */
+    #results {
+      position: absolute;
+      top: 110%;
+      left: -10%;
+      width: 100%;
+      background: #fff;
+      z-index: 100;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    /* Style each recommendation card */
+    .recommendation-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .recommendation-card:last-child {
+      border-bottom: none;
+    }
+
+    .recommendation-card img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .recommendation-card h3 {
+      margin: 5px 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .recommendation-card p {
+      font-size: 1rem;
+      color: #555;
+      margin: 0;
+    }
+    .recommendation-card button {
+      border: none;
+      cursor: pointer;
+      padding: 7px 12px;
+      margin: 5px;
+      font-size: 1rem;
+      background-color: teal;
+      border-radius: 5px;
+      color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="/index.html">
+          <img src="./images/travel-icon-213.png" alt="" width="100px" />
+        </a>
+        <div class="logo" style="color: #ccc">TravelBloom</div>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/about.html">About Us</a></li>
+          <li><a href="/pages/contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-container">
+          <div class="search-bar">
+            <input
+              id="searchInput"
+              type="text"
+              placeholder="Enter a destination or keyword"
+            />
+            <button id="searchBtn" class="search">Search</button>
+            <button id="clearBtn" class="clear">Clear</button>
+          </div>
+          <div id="results"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>
+          EXPLORE <br />
+          DREAM <br />
+          DESTINATION
+        </h1>
+        <p>
+          It encourages exploration of unfamiliar territories, embracing diverse
+          cultures and landscapes...
+        </p>
+        <button class="book-now">BOOK NOW</button>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <script src="script.js"></script>
+    </section>
+  </body>
+</html>
