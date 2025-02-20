@@ -98,7 +98,7 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  background: url("/images/background_beirut.jpeg") no-repeat center
+  background: url("background_beirut.jpeg") no-repeat center
     center/cover;
   height: 100vh;
   display: flex;
