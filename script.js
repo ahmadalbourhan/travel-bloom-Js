@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   resultsContainer.style.display = "none";
 
   // Fetch travel recommendation data from the JSON file
-  fetch("./db/travel_recommendation_api.json")
+  fetch("travel_recommendation_api.json")
     .then((response) => response.json())
     .then((data) => {
       apiData = data;

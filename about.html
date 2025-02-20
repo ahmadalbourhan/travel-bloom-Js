@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/36ee474f2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .hero-about {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 40px;
+      }
+
+      .about-content {
+        position: relative;
+        z-index: 1;
+        left: 10%;
+      }
+
+      .about-content h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .about-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+
+      .team-section {
+        position: relative;
+        display: flex;
+        z-index: 1;
+        margin-top: 40px;
+      }
+
+      .team-section h2 {
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 70px;
+      }
+      img {
+        display: flex;
+        float: left;
+        margin-right: 10px;
+      }
+
+      .team-cards {
+        display: flex;
+
+        justify-content: flex-end;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .team-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        width: 250px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .team-card h3 {
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      .team-card p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+
+      .role {
+        display: inline-block;
+        padding: 5px 15px;
+        background: navy;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">TravelBloom</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-bar" style="display: none"></div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-about">
+        <div class="overlay"></div>
+        <div class="about-content">
+          <h1>ABOUT US</h1>
+          <p>
+            Welcome to Our Company! We are a team of passionate individuals
+            dedicated to providing excellent services/products to our customers.
+            Our mission is to <strong>provide the best experience</strong> for
+            people traveling to different destinations around the world.
+          </p>
+          <p>
+            Our values include integrity, innovation, customer satisfaction, and
+            teamwork. We believe in
+            <strong>putting our customers first</strong> and working together to
+            achieve our goals.
+          </p>
+          <p>
+            Feel free to explore our website to learn more about what we offer!
+          </p>
+        </div>
+
+        <div class="team-section">
+          <h2>Our <br /><span>Team</span></h2>
+          <div class="team-cards">
+            <div class="team-card">
+              <img
+                src="/images/contact-image-icon-2.jpg"
+                alt="logo"
+                height="40px"
+              />
+              <h3>John Doe</h3>
+              <p>John is responsible for...</p>
+              <span class="role">CEO</span>
+            </div>
+            <div class="team-card">
+              <img
+                src="/images/contact-image-icon-2.jpg"
+                alt="logo"
+                height="40px"
+              />
+              <h3>Celina Thomas</h3>
+              <p>Celina Thomas is responsible for...</p>
+              <span class="role">Team Lead</span>
+            </div>
+            <div class="team-card">
+              <img
+                src="/images/contact-image-icon-2.jpg"
+                alt="logo"
+                height="40px"
+              />
+              <h3>Mike Tysen</h3>
+              <p>Mike Tysen is responsible for...</p>
+              <span class="role">Delivery Head</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </section>
+  </body>
+</html>
